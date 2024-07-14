@@ -1,0 +1,1504 @@
+[2024-07-13 05:01:09 +0000] [3598] [DEBUG] Current configuration:
+  config: gunicorn_conf.py
+  wsgi_app: None
+  bind: ['unix:/home/ubuntu/geeta/geeta-backend/fastapi/gunicorn.sock']
+  backlog: 2048
+  workers: 2
+  worker_class: uvicorn.workers.UvicornWorker
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/ubuntu/geeta/geeta-backend/fastapi
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 33
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: /home/ubuntu/geeta/geeta-backend/fastapi/access_log
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/ubuntu/geeta/geeta-backend/fastapi/error_log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  logconfig_json: None
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: main:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7584556d1300>
+  on_reload: <function OnReload.on_reload at 0x7584556d1440>
+  when_ready: <function WhenReady.when_ready at 0x7584556d1580>
+  pre_fork: <function Prefork.pre_fork at 0x7584556d1760>
+  post_fork: <function Postfork.post_fork at 0x7584556d18a0>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7584556d19e0>
+  worker_int: <function WorkerInt.worker_int at 0x7584556d1b20>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7584556d1c60>
+  pre_exec: <function PreExec.pre_exec at 0x7584556d1da0>
+  pre_request: <function PreRequest.pre_request at 0x7584556d1ee0>
+  post_request: <function PostRequest.post_request at 0x7584556d1f80>
+  child_exit: <function ChildExit.child_exit at 0x7584556d20c0>
+  worker_exit: <function WorkerExit.worker_exit at 0x7584556d2200>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7584556d2340>
+  on_exit: <function OnExit.on_exit at 0x7584556d2480>
+  ssl_context: <function NewSSLContext.ssl_context at 0x7584556d2660>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+  permit_unconventional_http_method: False
+  permit_unconventional_http_version: False
+  casefold_http_method: False
+  header_map: drop
+  tolerate_dangerous_framing: False
+[2024-07-13 05:01:09 +0000] [3598] [INFO] Starting gunicorn 22.0.0
+[2024-07-13 05:01:09 +0000] [3598] [DEBUG] Arbiter booted
+[2024-07-13 05:01:09 +0000] [3598] [INFO] Listening at: unix:/home/ubuntu/geeta/geeta-backend/fastapi/gunicorn.sock (3598)
+[2024-07-13 05:01:09 +0000] [3598] [INFO] Using worker: uvicorn.workers.UvicornWorker
+[2024-07-13 05:01:09 +0000] [3600] [INFO] Booting worker with pid: 3600
+[2024-07-13 05:01:09 +0000] [3601] [INFO] Booting worker with pid: 3601
+[2024-07-13 05:01:09 +0000] [3598] [DEBUG] 2 workers
+[2024-07-13 05:01:16 +0000] [3601] [INFO] Started server process [3601]
+[2024-07-13 05:01:16 +0000] [3601] [INFO] Waiting for application startup.
+[2024-07-13 05:01:16 +0000] [3600] [INFO] Started server process [3600]
+[2024-07-13 05:01:16 +0000] [3600] [INFO] Waiting for application startup.
+[2024-07-13 05:01:16 +0000] [3600] [INFO] Application startup complete.
+[2024-07-13 05:01:16 +0000] [3601] [INFO] Application startup complete.
+[2024-07-13 05:55:21 +0000] [3598] [INFO] Handling signal: term
+[2024-07-13 05:55:21 +0000] [3600] [INFO] Shutting down
+[2024-07-13 05:55:21 +0000] [3600] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2024-07-13 05:55:21 +0000] [3601] [INFO] Shutting down
+[2024-07-13 05:55:21 +0000] [3601] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2024-07-13 05:55:21 +0000] [3600] [INFO] Waiting for application shutdown.
+[2024-07-13 05:55:21 +0000] [3600] [INFO] Application shutdown complete.
+[2024-07-13 05:55:21 +0000] [3600] [INFO] Finished server process [3600]
+[2024-07-13 05:55:21 +0000] [3601] [INFO] Waiting for application shutdown.
+[2024-07-13 05:55:21 +0000] [3601] [INFO] Application shutdown complete.
+[2024-07-13 05:55:21 +0000] [3601] [INFO] Finished server process [3601]
+[2024-07-13 05:55:21 +0000] [3598] [ERROR] Worker (pid:3601) was sent SIGTERM!
+[2024-07-13 05:55:21 +0000] [3598] [ERROR] Worker (pid:3600) was sent SIGTERM!
+[2024-07-13 05:55:21 +0000] [3598] [INFO] Shutting down: Master
+[2024-07-13 05:55:22 +0000] [6876] [DEBUG] Current configuration:
+  config: gunicorn_conf.py
+  wsgi_app: None
+  bind: ['unix:/home/ubuntu/geeta/geeta-backend/fastapi/gunicorn.sock']
+  backlog: 2048
+  workers: 2
+  worker_class: uvicorn.workers.UvicornWorker
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/ubuntu/geeta/geeta-backend/fastapi
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 33
+  umask: 7
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: /home/ubuntu/geeta/geeta-backend/fastapi/access_log
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/ubuntu/geeta/geeta-backend/fastapi/error_log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  logconfig_json: None
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: main:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x78d3ade1d300>
+  on_reload: <function OnReload.on_reload at 0x78d3ade1d440>
+  when_ready: <function WhenReady.when_ready at 0x78d3ade1d580>
+  pre_fork: <function Prefork.pre_fork at 0x78d3ade1d760>
+  post_fork: <function Postfork.post_fork at 0x78d3ade1d8a0>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x78d3ade1d9e0>
+  worker_int: <function WorkerInt.worker_int at 0x78d3ade1db20>
+  worker_abort: <function WorkerAbort.worker_abort at 0x78d3ade1dc60>
+  pre_exec: <function PreExec.pre_exec at 0x78d3ade1dda0>
+  pre_request: <function PreRequest.pre_request at 0x78d3ade1dee0>
+  post_request: <function PostRequest.post_request at 0x78d3ade1df80>
+  child_exit: <function ChildExit.child_exit at 0x78d3ade1e0c0>
+  worker_exit: <function WorkerExit.worker_exit at 0x78d3ade1e200>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x78d3ade1e340>
+  on_exit: <function OnExit.on_exit at 0x78d3ade1e480>
+  ssl_context: <function NewSSLContext.ssl_context at 0x78d3ade1e660>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+  permit_unconventional_http_method: False
+  permit_unconventional_http_version: False
+  casefold_http_method: False
+  header_map: drop
+  tolerate_dangerous_framing: False
+[2024-07-13 05:55:22 +0000] [6876] [INFO] Starting gunicorn 22.0.0
+[2024-07-13 05:55:22 +0000] [6876] [DEBUG] Arbiter booted
+[2024-07-13 05:55:22 +0000] [6876] [INFO] Listening at: unix:/home/ubuntu/geeta/geeta-backend/fastapi/gunicorn.sock (6876)
+[2024-07-13 05:55:22 +0000] [6876] [INFO] Using worker: uvicorn.workers.UvicornWorker
+[2024-07-13 05:55:22 +0000] [6880] [INFO] Booting worker with pid: 6880
+[2024-07-13 05:55:22 +0000] [6881] [INFO] Booting worker with pid: 6881
+[2024-07-13 05:55:22 +0000] [6876] [DEBUG] 2 workers
+[2024-07-13 05:55:29 +0000] [6881] [INFO] Started server process [6881]
+[2024-07-13 05:55:29 +0000] [6881] [INFO] Waiting for application startup.
+[2024-07-13 05:55:29 +0000] [6881] [INFO] Application startup complete.
+[2024-07-13 05:55:29 +0000] [6880] [INFO] Started server process [6880]
+[2024-07-13 05:55:29 +0000] [6880] [INFO] Waiting for application startup.
+[2024-07-13 05:55:29 +0000] [6880] [INFO] Application startup complete.
+[2024-07-13 06:25:14 +0000] [6876] [INFO] Handling signal: term
+[2024-07-13 06:25:14 +0000] [6881] [INFO] Shutting down
+[2024-07-13 06:25:14 +0000] [6880] [INFO] Shutting down
+[2024-07-13 06:25:14 +0000] [6881] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2024-07-13 06:25:14 +0000] [6880] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2024-07-13 06:25:14 +0000] [6881] [INFO] Waiting for application shutdown.
+[2024-07-13 06:25:14 +0000] [6881] [INFO] Application shutdown complete.
+[2024-07-13 06:25:14 +0000] [6881] [INFO] Finished server process [6881]
+[2024-07-13 06:25:14 +0000] [6880] [INFO] Waiting for application shutdown.
+[2024-07-13 06:25:14 +0000] [6880] [INFO] Application shutdown complete.
+[2024-07-13 06:25:14 +0000] [6880] [INFO] Finished server process [6880]
+[2024-07-13 06:25:14 +0000] [6876] [ERROR] Worker (pid:6880) was sent SIGTERM!
+[2024-07-13 06:25:14 +0000] [6876] [ERROR] Worker (pid:6881) was sent SIGTERM!
+[2024-07-13 06:25:14 +0000] [6876] [INFO] Shutting down: Master
+[2024-07-13 06:25:15 +0000] [9150] [DEBUG] Current configuration:
+  config: gunicorn_conf.py
+  wsgi_app: None
+  bind: ['unix:/home/ubuntu/geeta/geeta-backend/fastapi/gunicorn.sock']
+  backlog: 2048
+  workers: 2
+  worker_class: uvicorn.workers.UvicornWorker
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/ubuntu/geeta/geeta-backend/fastapi
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 33
+  umask: 7
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: /home/ubuntu/geeta/geeta-backend/fastapi/access_log
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/ubuntu/geeta/geeta-backend/fastapi/error_log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  logconfig_json: None
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: main:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x74489b049300>
+  on_reload: <function OnReload.on_reload at 0x74489b049440>
+  when_ready: <function WhenReady.when_ready at 0x74489b049580>
+  pre_fork: <function Prefork.pre_fork at 0x74489b049760>
+  post_fork: <function Postfork.post_fork at 0x74489b0498a0>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x74489b0499e0>
+  worker_int: <function WorkerInt.worker_int at 0x74489b049b20>
+  worker_abort: <function WorkerAbort.worker_abort at 0x74489b049c60>
+  pre_exec: <function PreExec.pre_exec at 0x74489b049da0>
+  pre_request: <function PreRequest.pre_request at 0x74489b049ee0>
+  post_request: <function PostRequest.post_request at 0x74489b049f80>
+  child_exit: <function ChildExit.child_exit at 0x74489b04a0c0>
+  worker_exit: <function WorkerExit.worker_exit at 0x74489b04a200>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x74489b04a340>
+  on_exit: <function OnExit.on_exit at 0x74489b04a480>
+  ssl_context: <function NewSSLContext.ssl_context at 0x74489b04a660>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+  permit_unconventional_http_method: False
+  permit_unconventional_http_version: False
+  casefold_http_method: False
+  header_map: drop
+  tolerate_dangerous_framing: False
+[2024-07-13 06:25:15 +0000] [9150] [INFO] Starting gunicorn 22.0.0
+[2024-07-13 06:25:15 +0000] [9150] [DEBUG] Arbiter booted
+[2024-07-13 06:25:15 +0000] [9150] [INFO] Listening at: unix:/home/ubuntu/geeta/geeta-backend/fastapi/gunicorn.sock (9150)
+[2024-07-13 06:25:15 +0000] [9150] [INFO] Using worker: uvicorn.workers.UvicornWorker
+[2024-07-13 06:25:15 +0000] [9153] [INFO] Booting worker with pid: 9153
+[2024-07-13 06:25:15 +0000] [9154] [INFO] Booting worker with pid: 9154
+[2024-07-13 06:25:15 +0000] [9150] [DEBUG] 2 workers
+[2024-07-13 06:25:24 +0000] [9154] [INFO] Started server process [9154]
+[2024-07-13 06:25:24 +0000] [9154] [INFO] Waiting for application startup.
+[2024-07-13 06:25:24 +0000] [9154] [INFO] Application startup complete.
+[2024-07-13 06:25:24 +0000] [9153] [INFO] Started server process [9153]
+[2024-07-13 06:25:24 +0000] [9153] [INFO] Waiting for application startup.
+[2024-07-13 06:25:24 +0000] [9153] [INFO] Application startup complete.
+[2024-07-13 06:25:32 +0000] [9150] [INFO] Handling signal: term
+[2024-07-13 06:25:32 +0000] [9153] [INFO] Shutting down
+[2024-07-13 06:25:32 +0000] [9153] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2024-07-13 06:25:32 +0000] [9154] [INFO] Shutting down
+[2024-07-13 06:25:32 +0000] [9154] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2024-07-13 06:25:32 +0000] [9154] [INFO] Waiting for application shutdown.
+[2024-07-13 06:25:32 +0000] [9154] [INFO] Application shutdown complete.
+[2024-07-13 06:25:32 +0000] [9154] [INFO] Finished server process [9154]
+[2024-07-13 06:25:32 +0000] [9153] [INFO] Waiting for application shutdown.
+[2024-07-13 06:25:32 +0000] [9153] [INFO] Application shutdown complete.
+[2024-07-13 06:25:32 +0000] [9153] [INFO] Finished server process [9153]
+[2024-07-13 06:25:32 +0000] [9150] [ERROR] Worker (pid:9153) was sent SIGTERM!
+[2024-07-13 06:25:32 +0000] [9150] [ERROR] Worker (pid:9154) was sent SIGTERM!
+[2024-07-13 06:25:32 +0000] [9150] [INFO] Shutting down: Master
+[2024-07-13 08:31:46 +0000] [3624] [DEBUG] Current configuration:
+  config: gunicorn_conf.py
+  wsgi_app: None
+  bind: ['unix:/home/fastapi/gunicorn.sock']
+  backlog: 2048
+  workers: 2
+  worker_class: uvicorn.workers.UvicornWorker
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/fastapi
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 33
+  umask: 7
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: /home/fastapi/access_log
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/fastapi/error_log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  logconfig_json: None
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: main:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x74916ba9d300>
+  on_reload: <function OnReload.on_reload at 0x74916ba9d440>
+  when_ready: <function WhenReady.when_ready at 0x74916ba9d580>
+  pre_fork: <function Prefork.pre_fork at 0x74916ba9d760>
+  post_fork: <function Postfork.post_fork at 0x74916ba9d8a0>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x74916ba9d9e0>
+  worker_int: <function WorkerInt.worker_int at 0x74916ba9db20>
+  worker_abort: <function WorkerAbort.worker_abort at 0x74916ba9dc60>
+  pre_exec: <function PreExec.pre_exec at 0x74916ba9dda0>
+  pre_request: <function PreRequest.pre_request at 0x74916ba9dee0>
+  post_request: <function PostRequest.post_request at 0x74916ba9df80>
+  child_exit: <function ChildExit.child_exit at 0x74916ba9e0c0>
+  worker_exit: <function WorkerExit.worker_exit at 0x74916ba9e200>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x74916ba9e340>
+  on_exit: <function OnExit.on_exit at 0x74916ba9e480>
+  ssl_context: <function NewSSLContext.ssl_context at 0x74916ba9e660>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+  permit_unconventional_http_method: False
+  permit_unconventional_http_version: False
+  casefold_http_method: False
+  header_map: drop
+  tolerate_dangerous_framing: False
+[2024-07-13 08:31:46 +0000] [3624] [INFO] Starting gunicorn 22.0.0
+[2024-07-13 08:31:46 +0000] [3624] [DEBUG] Arbiter booted
+[2024-07-13 08:31:46 +0000] [3624] [INFO] Listening at: unix:/home/fastapi/gunicorn.sock (3624)
+[2024-07-13 08:31:46 +0000] [3624] [INFO] Using worker: uvicorn.workers.UvicornWorker
+[2024-07-13 08:31:46 +0000] [3626] [INFO] Booting worker with pid: 3626
+[2024-07-13 08:31:46 +0000] [3627] [INFO] Booting worker with pid: 3627
+[2024-07-13 08:31:46 +0000] [3624] [DEBUG] 2 workers
+[2024-07-13 08:31:55 +0000] [3627] [INFO] Started server process [3627]
+[2024-07-13 08:31:55 +0000] [3627] [INFO] Waiting for application startup.
+[2024-07-13 08:31:55 +0000] [3626] [INFO] Started server process [3626]
+[2024-07-13 08:31:55 +0000] [3626] [INFO] Waiting for application startup.
+[2024-07-13 08:31:55 +0000] [3627] [INFO] Application startup complete.
+[2024-07-13 08:31:55 +0000] [3626] [INFO] Application startup complete.
+[2024-07-13 09:16:18 +0000] [3624] [INFO] Handling signal: term
+[2024-07-13 09:16:18 +0000] [3626] [INFO] Shutting down
+[2024-07-13 09:16:18 +0000] [3626] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2024-07-13 09:16:18 +0000] [3627] [INFO] Shutting down
+[2024-07-13 09:16:18 +0000] [3627] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2024-07-13 09:16:18 +0000] [3626] [INFO] Waiting for application shutdown.
+[2024-07-13 09:16:18 +0000] [3626] [INFO] Application shutdown complete.
+[2024-07-13 09:16:18 +0000] [3626] [INFO] Finished server process [3626]
+[2024-07-13 09:16:18 +0000] [3627] [INFO] Waiting for application shutdown.
+[2024-07-13 09:16:18 +0000] [3627] [INFO] Application shutdown complete.
+[2024-07-13 09:16:18 +0000] [3627] [INFO] Finished server process [3627]
+[2024-07-13 09:16:18 +0000] [3624] [ERROR] Worker (pid:3626) was sent SIGTERM!
+[2024-07-13 09:16:18 +0000] [3624] [ERROR] Worker (pid:3627) was sent SIGTERM!
+[2024-07-13 09:16:18 +0000] [3624] [INFO] Shutting down: Master
+[2024-07-13 09:16:19 +0000] [8451] [DEBUG] Current configuration:
+  config: gunicorn_conf.py
+  wsgi_app: None
+  bind: ['unix:/home/fastapi/gunicorn.sock']
+  backlog: 2048
+  workers: 2
+  worker_class: uvicorn.workers.UvicornWorker
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/fastapi
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 33
+  umask: 7
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: /home/fastapi/access_log
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/fastapi/error_log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  logconfig_json: None
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: main:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x718fb36cd300>
+  on_reload: <function OnReload.on_reload at 0x718fb36cd440>
+  when_ready: <function WhenReady.when_ready at 0x718fb36cd580>
+  pre_fork: <function Prefork.pre_fork at 0x718fb36cd760>
+  post_fork: <function Postfork.post_fork at 0x718fb36cd8a0>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x718fb36cd9e0>
+  worker_int: <function WorkerInt.worker_int at 0x718fb36cdb20>
+  worker_abort: <function WorkerAbort.worker_abort at 0x718fb36cdc60>
+  pre_exec: <function PreExec.pre_exec at 0x718fb36cdda0>
+  pre_request: <function PreRequest.pre_request at 0x718fb36cdee0>
+  post_request: <function PostRequest.post_request at 0x718fb36cdf80>
+  child_exit: <function ChildExit.child_exit at 0x718fb36ce0c0>
+  worker_exit: <function WorkerExit.worker_exit at 0x718fb36ce200>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x718fb36ce340>
+  on_exit: <function OnExit.on_exit at 0x718fb36ce480>
+  ssl_context: <function NewSSLContext.ssl_context at 0x718fb36ce660>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+  permit_unconventional_http_method: False
+  permit_unconventional_http_version: False
+  casefold_http_method: False
+  header_map: drop
+  tolerate_dangerous_framing: False
+[2024-07-13 09:16:19 +0000] [8451] [INFO] Starting gunicorn 22.0.0
+[2024-07-13 09:16:19 +0000] [8451] [DEBUG] Arbiter booted
+[2024-07-13 09:16:19 +0000] [8451] [INFO] Listening at: unix:/home/fastapi/gunicorn.sock (8451)
+[2024-07-13 09:16:19 +0000] [8451] [INFO] Using worker: uvicorn.workers.UvicornWorker
+[2024-07-13 09:16:19 +0000] [8454] [INFO] Booting worker with pid: 8454
+[2024-07-13 09:16:19 +0000] [8455] [INFO] Booting worker with pid: 8455
+[2024-07-13 09:16:19 +0000] [8451] [DEBUG] 2 workers
+[2024-07-13 09:16:27 +0000] [8454] [INFO] Started server process [8454]
+[2024-07-13 09:16:27 +0000] [8454] [INFO] Waiting for application startup.
+[2024-07-13 09:16:27 +0000] [8454] [INFO] Application startup complete.
+[2024-07-13 09:16:27 +0000] [8455] [INFO] Started server process [8455]
+[2024-07-13 09:16:27 +0000] [8455] [INFO] Waiting for application startup.
+[2024-07-13 09:16:27 +0000] [8455] [INFO] Application startup complete.
+[2024-07-13 09:30:39 +0000] [516] [DEBUG] Current configuration:
+  config: gunicorn_conf.py
+  wsgi_app: None
+  bind: ['unix:/home/fastapi/gunicorn.sock']
+  backlog: 2048
+  workers: 2
+  worker_class: uvicorn.workers.UvicornWorker
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/fastapi
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 33
+  umask: 7
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: /home/fastapi/access_log
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/fastapi/error_log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  logconfig_json: None
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: main:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7bfd97c9d300>
+  on_reload: <function OnReload.on_reload at 0x7bfd97c9d440>
+  when_ready: <function WhenReady.when_ready at 0x7bfd97c9d580>
+  pre_fork: <function Prefork.pre_fork at 0x7bfd97c9d760>
+  post_fork: <function Postfork.post_fork at 0x7bfd97c9d8a0>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7bfd97c9d9e0>
+  worker_int: <function WorkerInt.worker_int at 0x7bfd97c9db20>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7bfd97c9dc60>
+  pre_exec: <function PreExec.pre_exec at 0x7bfd97c9dda0>
+  pre_request: <function PreRequest.pre_request at 0x7bfd97c9dee0>
+  post_request: <function PostRequest.post_request at 0x7bfd97c9df80>
+  child_exit: <function ChildExit.child_exit at 0x7bfd97c9e0c0>
+  worker_exit: <function WorkerExit.worker_exit at 0x7bfd97c9e200>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7bfd97c9e340>
+  on_exit: <function OnExit.on_exit at 0x7bfd97c9e480>
+  ssl_context: <function NewSSLContext.ssl_context at 0x7bfd97c9e660>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+  permit_unconventional_http_method: False
+  permit_unconventional_http_version: False
+  casefold_http_method: False
+  header_map: drop
+  tolerate_dangerous_framing: False
+[2024-07-13 09:30:39 +0000] [516] [INFO] Starting gunicorn 22.0.0
+[2024-07-13 09:30:39 +0000] [516] [DEBUG] Arbiter booted
+[2024-07-13 09:30:39 +0000] [516] [INFO] Listening at: unix:/home/fastapi/gunicorn.sock (516)
+[2024-07-13 09:30:39 +0000] [516] [INFO] Using worker: uvicorn.workers.UvicornWorker
+[2024-07-13 09:30:39 +0000] [753] [INFO] Booting worker with pid: 753
+[2024-07-13 09:30:39 +0000] [755] [INFO] Booting worker with pid: 755
+[2024-07-13 09:30:39 +0000] [516] [DEBUG] 2 workers
+[2024-07-13 09:30:49 +0000] [753] [INFO] Started server process [753]
+[2024-07-13 09:30:49 +0000] [753] [INFO] Waiting for application startup.
+[2024-07-13 09:30:49 +0000] [755] [INFO] Started server process [755]
+[2024-07-13 09:30:49 +0000] [755] [INFO] Waiting for application startup.
+[2024-07-13 09:30:49 +0000] [753] [INFO] Application startup complete.
+[2024-07-13 09:30:49 +0000] [755] [INFO] Application startup complete.
+[2024-07-13 09:50:08 +0000] [512] [DEBUG] Current configuration:
+  config: gunicorn_conf.py
+  wsgi_app: None
+  bind: ['unix:/home/fastapi/gunicorn.sock']
+  backlog: 2048
+  workers: 2
+  worker_class: uvicorn.workers.UvicornWorker
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/fastapi
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 33
+  umask: 7
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: /home/fastapi/access_log
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/fastapi/error_log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  logconfig_json: None
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: main:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7ff25bd4d300>
+  on_reload: <function OnReload.on_reload at 0x7ff25bd4d440>
+  when_ready: <function WhenReady.when_ready at 0x7ff25bd4d580>
+  pre_fork: <function Prefork.pre_fork at 0x7ff25bd4d760>
+  post_fork: <function Postfork.post_fork at 0x7ff25bd4d8a0>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7ff25bd4d9e0>
+  worker_int: <function WorkerInt.worker_int at 0x7ff25bd4db20>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7ff25bd4dc60>
+  pre_exec: <function PreExec.pre_exec at 0x7ff25bd4dda0>
+  pre_request: <function PreRequest.pre_request at 0x7ff25bd4dee0>
+  post_request: <function PostRequest.post_request at 0x7ff25bd4df80>
+  child_exit: <function ChildExit.child_exit at 0x7ff25bd4e0c0>
+  worker_exit: <function WorkerExit.worker_exit at 0x7ff25bd4e200>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7ff25bd4e340>
+  on_exit: <function OnExit.on_exit at 0x7ff25bd4e480>
+  ssl_context: <function NewSSLContext.ssl_context at 0x7ff25bd4e660>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+  permit_unconventional_http_method: False
+  permit_unconventional_http_version: False
+  casefold_http_method: False
+  header_map: drop
+  tolerate_dangerous_framing: False
+[2024-07-13 09:50:08 +0000] [512] [INFO] Starting gunicorn 22.0.0
+[2024-07-13 09:50:08 +0000] [512] [DEBUG] Arbiter booted
+[2024-07-13 09:50:08 +0000] [512] [INFO] Listening at: unix:/home/fastapi/gunicorn.sock (512)
+[2024-07-13 09:50:08 +0000] [512] [INFO] Using worker: uvicorn.workers.UvicornWorker
+[2024-07-13 09:50:08 +0000] [757] [INFO] Booting worker with pid: 757
+[2024-07-13 09:50:08 +0000] [759] [INFO] Booting worker with pid: 759
+[2024-07-13 09:50:08 +0000] [512] [DEBUG] 2 workers
+[2024-07-13 09:50:19 +0000] [759] [INFO] Started server process [759]
+[2024-07-13 09:50:19 +0000] [759] [INFO] Waiting for application startup.
+[2024-07-13 09:50:19 +0000] [757] [INFO] Started server process [757]
+[2024-07-13 09:50:19 +0000] [757] [INFO] Waiting for application startup.
+[2024-07-13 09:50:19 +0000] [759] [INFO] Application startup complete.
+[2024-07-13 09:50:19 +0000] [757] [INFO] Application startup complete.
+[2024-07-13 09:58:56 +0000] [516] [DEBUG] Current configuration:
+  config: gunicorn_conf.py
+  wsgi_app: None
+  bind: ['unix:/home/fastapi/gunicorn.sock']
+  backlog: 2048
+  workers: 2
+  worker_class: uvicorn.workers.UvicornWorker
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/fastapi
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 33
+  umask: 7
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: /home/fastapi/access_log
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/fastapi/error_log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  logconfig_json: None
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: main:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7c973edf9300>
+  on_reload: <function OnReload.on_reload at 0x7c973edf9440>
+  when_ready: <function WhenReady.when_ready at 0x7c973edf9580>
+  pre_fork: <function Prefork.pre_fork at 0x7c973edf9760>
+  post_fork: <function Postfork.post_fork at 0x7c973edf98a0>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7c973edf99e0>
+  worker_int: <function WorkerInt.worker_int at 0x7c973edf9b20>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7c973edf9c60>
+  pre_exec: <function PreExec.pre_exec at 0x7c973edf9da0>
+  pre_request: <function PreRequest.pre_request at 0x7c973edf9ee0>
+  post_request: <function PostRequest.post_request at 0x7c973edf9f80>
+  child_exit: <function ChildExit.child_exit at 0x7c973edfa0c0>
+  worker_exit: <function WorkerExit.worker_exit at 0x7c973edfa200>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7c973edfa340>
+  on_exit: <function OnExit.on_exit at 0x7c973edfa480>
+  ssl_context: <function NewSSLContext.ssl_context at 0x7c973edfa660>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+  permit_unconventional_http_method: False
+  permit_unconventional_http_version: False
+  casefold_http_method: False
+  header_map: drop
+  tolerate_dangerous_framing: False
+[2024-07-13 09:58:56 +0000] [516] [INFO] Starting gunicorn 22.0.0
+[2024-07-13 09:58:56 +0000] [516] [DEBUG] Arbiter booted
+[2024-07-13 09:58:56 +0000] [516] [INFO] Listening at: unix:/home/fastapi/gunicorn.sock (516)
+[2024-07-13 09:58:56 +0000] [516] [INFO] Using worker: uvicorn.workers.UvicornWorker
+[2024-07-13 09:58:56 +0000] [755] [INFO] Booting worker with pid: 755
+[2024-07-13 09:58:56 +0000] [760] [INFO] Booting worker with pid: 760
+[2024-07-13 09:58:56 +0000] [516] [DEBUG] 2 workers
+[2024-07-13 09:59:08 +0000] [755] [INFO] Started server process [755]
+[2024-07-13 09:59:08 +0000] [755] [INFO] Waiting for application startup.
+[2024-07-13 09:59:08 +0000] [760] [INFO] Started server process [760]
+[2024-07-13 09:59:08 +0000] [760] [INFO] Waiting for application startup.
+[2024-07-13 09:59:08 +0000] [755] [INFO] Application startup complete.
+[2024-07-13 09:59:08 +0000] [760] [INFO] Application startup complete.
+[2024-07-13 10:06:04 +0000] [516] [INFO] Handling signal: term
+[2024-07-13 10:06:05 +0000] [755] [INFO] Shutting down
+[2024-07-13 10:06:05 +0000] [755] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2024-07-13 10:06:05 +0000] [760] [INFO] Shutting down
+[2024-07-13 10:06:05 +0000] [760] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2024-07-13 10:06:05 +0000] [755] [INFO] Waiting for application shutdown.
+[2024-07-13 10:06:05 +0000] [755] [INFO] Application shutdown complete.
+[2024-07-13 10:06:05 +0000] [755] [INFO] Finished server process [755]
+[2024-07-13 10:06:05 +0000] [760] [INFO] Waiting for application shutdown.
+[2024-07-13 10:06:05 +0000] [760] [INFO] Application shutdown complete.
+[2024-07-13 10:06:05 +0000] [760] [INFO] Finished server process [760]
+[2024-07-13 10:06:05 +0000] [516] [ERROR] Worker (pid:755) was sent SIGTERM!
+[2024-07-13 10:06:05 +0000] [516] [ERROR] Worker (pid:760) was sent SIGTERM!
+[2024-07-13 10:06:05 +0000] [516] [INFO] Shutting down: Master
+[2024-07-13 10:06:05 +0000] [2269] [DEBUG] Current configuration:
+  config: gunicorn_conf.py
+  wsgi_app: None
+  bind: ['unix:/home/fastapi/gunicorn.sock']
+  backlog: 2048
+  workers: 2
+  worker_class: uvicorn.workers.UvicornWorker
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/fastapi
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 33
+  umask: 7
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: /home/fastapi/access_log
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/fastapi/error_log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  logconfig_json: None
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: main:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x778ba143d300>
+  on_reload: <function OnReload.on_reload at 0x778ba143d440>
+  when_ready: <function WhenReady.when_ready at 0x778ba143d580>
+  pre_fork: <function Prefork.pre_fork at 0x778ba143d760>
+  post_fork: <function Postfork.post_fork at 0x778ba143d8a0>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x778ba143d9e0>
+  worker_int: <function WorkerInt.worker_int at 0x778ba143db20>
+  worker_abort: <function WorkerAbort.worker_abort at 0x778ba143dc60>
+  pre_exec: <function PreExec.pre_exec at 0x778ba143dda0>
+  pre_request: <function PreRequest.pre_request at 0x778ba143dee0>
+  post_request: <function PostRequest.post_request at 0x778ba143df80>
+  child_exit: <function ChildExit.child_exit at 0x778ba143e0c0>
+  worker_exit: <function WorkerExit.worker_exit at 0x778ba143e200>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x778ba143e340>
+  on_exit: <function OnExit.on_exit at 0x778ba143e480>
+  ssl_context: <function NewSSLContext.ssl_context at 0x778ba143e660>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+  permit_unconventional_http_method: False
+  permit_unconventional_http_version: False
+  casefold_http_method: False
+  header_map: drop
+  tolerate_dangerous_framing: False
+[2024-07-13 10:06:05 +0000] [2269] [INFO] Starting gunicorn 22.0.0
+[2024-07-13 10:06:05 +0000] [2269] [DEBUG] Arbiter booted
+[2024-07-13 10:06:05 +0000] [2269] [INFO] Listening at: unix:/home/fastapi/gunicorn.sock (2269)
+[2024-07-13 10:06:05 +0000] [2269] [INFO] Using worker: uvicorn.workers.UvicornWorker
+[2024-07-13 10:06:05 +0000] [2271] [INFO] Booting worker with pid: 2271
+[2024-07-13 10:06:05 +0000] [2272] [INFO] Booting worker with pid: 2272
+[2024-07-13 10:06:05 +0000] [2269] [DEBUG] 2 workers
+[2024-07-13 10:06:15 +0000] [2271] [INFO] Started server process [2271]
+[2024-07-13 10:06:15 +0000] [2272] [INFO] Started server process [2272]
+[2024-07-13 10:06:15 +0000] [2272] [INFO] Waiting for application startup.
+[2024-07-13 10:06:15 +0000] [2271] [INFO] Waiting for application startup.
+[2024-07-13 10:06:15 +0000] [2272] [INFO] Application startup complete.
+[2024-07-13 10:06:15 +0000] [2271] [INFO] Application startup complete.
+[2024-07-13 10:42:36 +0000] [2269] [INFO] Handling signal: term
+[2024-07-13 10:42:36 +0000] [2271] [INFO] Shutting down
+[2024-07-13 10:42:36 +0000] [2271] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2024-07-13 10:42:36 +0000] [2272] [INFO] Shutting down
+[2024-07-13 10:42:36 +0000] [2272] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2024-07-13 10:42:36 +0000] [2271] [INFO] Waiting for application shutdown.
+[2024-07-13 10:42:36 +0000] [2271] [INFO] Application shutdown complete.
+[2024-07-13 10:42:36 +0000] [2271] [INFO] Finished server process [2271]
+[2024-07-13 10:42:36 +0000] [2272] [INFO] Waiting for application shutdown.
+[2024-07-13 10:42:36 +0000] [2272] [INFO] Application shutdown complete.
+[2024-07-13 10:42:36 +0000] [2272] [INFO] Finished server process [2272]
+[2024-07-13 10:42:36 +0000] [2269] [ERROR] Worker (pid:2272) was sent SIGTERM!
+[2024-07-13 10:42:36 +0000] [2269] [ERROR] Worker (pid:2271) was sent SIGTERM!
+[2024-07-13 10:42:36 +0000] [2269] [INFO] Shutting down: Master
+[2024-07-13 10:42:37 +0000] [4007] [DEBUG] Current configuration:
+  config: gunicorn_conf.py
+  wsgi_app: None
+  bind: ['unix:/home/fastapi/gunicorn.sock']
+  backlog: 2048
+  workers: 2
+  worker_class: uvicorn.workers.UvicornWorker
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/fastapi
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 33
+  umask: 7
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: /home/fastapi/access_log
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/fastapi/error_log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  logconfig_json: None
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: main:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7a1a2f285300>
+  on_reload: <function OnReload.on_reload at 0x7a1a2f285440>
+  when_ready: <function WhenReady.when_ready at 0x7a1a2f285580>
+  pre_fork: <function Prefork.pre_fork at 0x7a1a2f285760>
+  post_fork: <function Postfork.post_fork at 0x7a1a2f2858a0>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7a1a2f2859e0>
+  worker_int: <function WorkerInt.worker_int at 0x7a1a2f285b20>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7a1a2f285c60>
+  pre_exec: <function PreExec.pre_exec at 0x7a1a2f285da0>
+  pre_request: <function PreRequest.pre_request at 0x7a1a2f285ee0>
+  post_request: <function PostRequest.post_request at 0x7a1a2f285f80>
+  child_exit: <function ChildExit.child_exit at 0x7a1a2f2860c0>
+  worker_exit: <function WorkerExit.worker_exit at 0x7a1a2f286200>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7a1a2f286340>
+  on_exit: <function OnExit.on_exit at 0x7a1a2f286480>
+  ssl_context: <function NewSSLContext.ssl_context at 0x7a1a2f286660>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+  permit_unconventional_http_method: False
+  permit_unconventional_http_version: False
+  casefold_http_method: False
+  header_map: drop
+  tolerate_dangerous_framing: False
+[2024-07-13 10:42:37 +0000] [4007] [INFO] Starting gunicorn 22.0.0
+[2024-07-13 10:42:37 +0000] [4007] [DEBUG] Arbiter booted
+[2024-07-13 10:42:37 +0000] [4007] [INFO] Listening at: unix:/home/fastapi/gunicorn.sock (4007)
+[2024-07-13 10:42:37 +0000] [4007] [INFO] Using worker: uvicorn.workers.UvicornWorker
+[2024-07-13 10:42:37 +0000] [4018] [INFO] Booting worker with pid: 4018
+[2024-07-13 10:42:37 +0000] [4019] [INFO] Booting worker with pid: 4019
+[2024-07-13 10:42:37 +0000] [4007] [DEBUG] 2 workers
+[2024-07-13 10:42:46 +0000] [4018] [INFO] Started server process [4018]
+[2024-07-13 10:42:46 +0000] [4019] [INFO] Started server process [4019]
+[2024-07-13 10:42:46 +0000] [4019] [INFO] Waiting for application startup.
+[2024-07-13 10:42:46 +0000] [4018] [INFO] Waiting for application startup.
+[2024-07-13 10:42:46 +0000] [4019] [INFO] Application startup complete.
+[2024-07-13 10:42:46 +0000] [4018] [INFO] Application startup complete.
+[2024-07-14 07:10:48 +0000] [4007] [INFO] Handling signal: term
+[2024-07-14 07:10:48 +0000] [4018] [INFO] Shutting down
+[2024-07-14 07:10:48 +0000] [4018] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2024-07-14 07:10:48 +0000] [4019] [INFO] Shutting down
+[2024-07-14 07:10:48 +0000] [4019] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2024-07-14 07:10:48 +0000] [4018] [INFO] Waiting for application shutdown.
+[2024-07-14 07:10:48 +0000] [4018] [INFO] Application shutdown complete.
+[2024-07-14 07:10:48 +0000] [4018] [INFO] Finished server process [4018]
+[2024-07-14 07:10:48 +0000] [4019] [INFO] Waiting for application shutdown.
+[2024-07-14 07:10:48 +0000] [4019] [INFO] Application shutdown complete.
+[2024-07-14 07:10:48 +0000] [4019] [INFO] Finished server process [4019]
+[2024-07-14 07:10:48 +0000] [4007] [ERROR] Worker (pid:4018) was sent SIGTERM!
+[2024-07-14 07:10:48 +0000] [4007] [ERROR] Worker (pid:4019) was sent SIGTERM!
+[2024-07-14 07:10:48 +0000] [4007] [INFO] Shutting down: Master
+[2024-07-14 07:10:49 +0000] [13175] [DEBUG] Current configuration:
+  config: gunicorn_conf.py
+  wsgi_app: None
+  bind: ['unix:/home/fastapi/gunicorn.sock']
+  backlog: 2048
+  workers: 2
+  worker_class: uvicorn.workers.UvicornWorker
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/fastapi
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 33
+  umask: 7
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: /home/fastapi/access_log
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/fastapi/error_log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  logconfig_json: None
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: main:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x70c9c3c9d300>
+  on_reload: <function OnReload.on_reload at 0x70c9c3c9d440>
+  when_ready: <function WhenReady.when_ready at 0x70c9c3c9d580>
+  pre_fork: <function Prefork.pre_fork at 0x70c9c3c9d760>
+  post_fork: <function Postfork.post_fork at 0x70c9c3c9d8a0>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x70c9c3c9d9e0>
+  worker_int: <function WorkerInt.worker_int at 0x70c9c3c9db20>
+  worker_abort: <function WorkerAbort.worker_abort at 0x70c9c3c9dc60>
+  pre_exec: <function PreExec.pre_exec at 0x70c9c3c9dda0>
+  pre_request: <function PreRequest.pre_request at 0x70c9c3c9dee0>
+  post_request: <function PostRequest.post_request at 0x70c9c3c9df80>
+  child_exit: <function ChildExit.child_exit at 0x70c9c3c9e0c0>
+  worker_exit: <function WorkerExit.worker_exit at 0x70c9c3c9e200>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x70c9c3c9e340>
+  on_exit: <function OnExit.on_exit at 0x70c9c3c9e480>
+  ssl_context: <function NewSSLContext.ssl_context at 0x70c9c3c9e660>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+  permit_unconventional_http_method: False
+  permit_unconventional_http_version: False
+  casefold_http_method: False
+  header_map: drop
+  tolerate_dangerous_framing: False
+[2024-07-14 07:10:49 +0000] [13175] [INFO] Starting gunicorn 22.0.0
+[2024-07-14 07:10:49 +0000] [13175] [DEBUG] Arbiter booted
+[2024-07-14 07:10:49 +0000] [13175] [INFO] Listening at: unix:/home/fastapi/gunicorn.sock (13175)
+[2024-07-14 07:10:49 +0000] [13175] [INFO] Using worker: uvicorn.workers.UvicornWorker
+[2024-07-14 07:10:49 +0000] [13187] [INFO] Booting worker with pid: 13187
+[2024-07-14 07:10:49 +0000] [13188] [INFO] Booting worker with pid: 13188
+[2024-07-14 07:10:49 +0000] [13175] [DEBUG] 2 workers
+[2024-07-14 07:10:58 +0000] [13187] [INFO] Started server process [13187]
+[2024-07-14 07:10:58 +0000] [13187] [INFO] Waiting for application startup.
+[2024-07-14 07:10:58 +0000] [13188] [INFO] Started server process [13188]
+[2024-07-14 07:10:58 +0000] [13188] [INFO] Waiting for application startup.
+[2024-07-14 07:10:58 +0000] [13187] [INFO] Application startup complete.
+[2024-07-14 07:10:58 +0000] [13188] [INFO] Application startup complete.
+[2024-07-14 07:15:07 +0000] [13175] [INFO] Handling signal: term
+[2024-07-14 07:15:07 +0000] [13187] [INFO] Shutting down
+[2024-07-14 07:15:07 +0000] [13187] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2024-07-14 07:15:07 +0000] [13188] [INFO] Shutting down
+[2024-07-14 07:15:07 +0000] [13188] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2024-07-14 07:15:07 +0000] [13187] [INFO] Waiting for application shutdown.
+[2024-07-14 07:15:07 +0000] [13187] [INFO] Application shutdown complete.
+[2024-07-14 07:15:07 +0000] [13187] [INFO] Finished server process [13187]
+[2024-07-14 07:15:07 +0000] [13175] [ERROR] Worker (pid:13187) was sent SIGTERM!
+[2024-07-14 07:15:07 +0000] [13188] [INFO] Waiting for application shutdown.
+[2024-07-14 07:15:07 +0000] [13188] [INFO] Application shutdown complete.
+[2024-07-14 07:15:07 +0000] [13188] [INFO] Finished server process [13188]
+[2024-07-14 07:15:07 +0000] [13175] [ERROR] Worker (pid:13188) was sent SIGTERM!
+[2024-07-14 07:15:07 +0000] [13175] [INFO] Shutting down: Master
+[2024-07-14 07:15:08 +0000] [14298] [DEBUG] Current configuration:
+  config: gunicorn_conf.py
+  wsgi_app: None
+  bind: ['unix:/home/fastapi/gunicorn.sock']
+  backlog: 2048
+  workers: 2
+  worker_class: uvicorn.workers.UvicornWorker
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/fastapi
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 33
+  umask: 7
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: /home/fastapi/access_log
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/fastapi/error_log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  logconfig_json: None
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: main:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x72c0b1c9d300>
+  on_reload: <function OnReload.on_reload at 0x72c0b1c9d440>
+  when_ready: <function WhenReady.when_ready at 0x72c0b1c9d580>
+  pre_fork: <function Prefork.pre_fork at 0x72c0b1c9d760>
+  post_fork: <function Postfork.post_fork at 0x72c0b1c9d8a0>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x72c0b1c9d9e0>
+  worker_int: <function WorkerInt.worker_int at 0x72c0b1c9db20>
+  worker_abort: <function WorkerAbort.worker_abort at 0x72c0b1c9dc60>
+  pre_exec: <function PreExec.pre_exec at 0x72c0b1c9dda0>
+  pre_request: <function PreRequest.pre_request at 0x72c0b1c9dee0>
+  post_request: <function PostRequest.post_request at 0x72c0b1c9df80>
+  child_exit: <function ChildExit.child_exit at 0x72c0b1c9e0c0>
+  worker_exit: <function WorkerExit.worker_exit at 0x72c0b1c9e200>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x72c0b1c9e340>
+  on_exit: <function OnExit.on_exit at 0x72c0b1c9e480>
+  ssl_context: <function NewSSLContext.ssl_context at 0x72c0b1c9e660>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+  permit_unconventional_http_method: False
+  permit_unconventional_http_version: False
+  casefold_http_method: False
+  header_map: drop
+  tolerate_dangerous_framing: False
+[2024-07-14 07:15:08 +0000] [14298] [INFO] Starting gunicorn 22.0.0
+[2024-07-14 07:15:08 +0000] [14298] [DEBUG] Arbiter booted
+[2024-07-14 07:15:08 +0000] [14298] [INFO] Listening at: unix:/home/fastapi/gunicorn.sock (14298)
+[2024-07-14 07:15:08 +0000] [14298] [INFO] Using worker: uvicorn.workers.UvicornWorker
+[2024-07-14 07:15:08 +0000] [14300] [INFO] Booting worker with pid: 14300
+[2024-07-14 07:15:08 +0000] [14301] [INFO] Booting worker with pid: 14301
+[2024-07-14 07:15:08 +0000] [14298] [DEBUG] 2 workers
+[2024-07-14 07:15:16 +0000] [14301] [INFO] Started server process [14301]
+[2024-07-14 07:15:16 +0000] [14301] [INFO] Waiting for application startup.
+[2024-07-14 07:15:16 +0000] [14300] [INFO] Started server process [14300]
+[2024-07-14 07:15:16 +0000] [14300] [INFO] Waiting for application startup.
+[2024-07-14 07:15:16 +0000] [14300] [INFO] Application startup complete.
+[2024-07-14 07:15:16 +0000] [14301] [INFO] Application startup complete.
+[2024-07-14 07:18:58 +0000] [14298] [INFO] Handling signal: term
+[2024-07-14 07:18:58 +0000] [14300] [INFO] Shutting down
+[2024-07-14 07:18:58 +0000] [14300] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2024-07-14 07:18:58 +0000] [14301] [INFO] Shutting down
+[2024-07-14 07:18:58 +0000] [14301] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2024-07-14 07:18:58 +0000] [14300] [INFO] Waiting for application shutdown.
+[2024-07-14 07:18:58 +0000] [14300] [INFO] Application shutdown complete.
+[2024-07-14 07:18:58 +0000] [14300] [INFO] Finished server process [14300]
+[2024-07-14 07:18:58 +0000] [14298] [ERROR] Worker (pid:14300) was sent SIGTERM!
+[2024-07-14 07:18:58 +0000] [14301] [INFO] Waiting for application shutdown.
+[2024-07-14 07:18:58 +0000] [14301] [INFO] Application shutdown complete.
+[2024-07-14 07:18:58 +0000] [14301] [INFO] Finished server process [14301]
+[2024-07-14 07:18:58 +0000] [14298] [ERROR] Worker (pid:14301) was sent SIGTERM!
+[2024-07-14 07:18:58 +0000] [14298] [INFO] Shutting down: Master
+[2024-07-14 07:18:59 +0000] [14954] [DEBUG] Current configuration:
+  config: gunicorn_conf.py
+  wsgi_app: None
+  bind: ['unix:/home/fastapi/gunicorn.sock']
+  backlog: 2048
+  workers: 2
+  worker_class: uvicorn.workers.UvicornWorker
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/fastapi
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 33
+  umask: 7
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: /home/fastapi/access_log
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/fastapi/error_log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  logconfig_json: None
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: main:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7dbb08df9300>
+  on_reload: <function OnReload.on_reload at 0x7dbb08df9440>
+  when_ready: <function WhenReady.when_ready at 0x7dbb08df9580>
+  pre_fork: <function Prefork.pre_fork at 0x7dbb08df9760>
+  post_fork: <function Postfork.post_fork at 0x7dbb08df98a0>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7dbb08df99e0>
+  worker_int: <function WorkerInt.worker_int at 0x7dbb08df9b20>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7dbb08df9c60>
+  pre_exec: <function PreExec.pre_exec at 0x7dbb08df9da0>
+  pre_request: <function PreRequest.pre_request at 0x7dbb08df9ee0>
+  post_request: <function PostRequest.post_request at 0x7dbb08df9f80>
+  child_exit: <function ChildExit.child_exit at 0x7dbb08dfa0c0>
+  worker_exit: <function WorkerExit.worker_exit at 0x7dbb08dfa200>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7dbb08dfa340>
+  on_exit: <function OnExit.on_exit at 0x7dbb08dfa480>
+  ssl_context: <function NewSSLContext.ssl_context at 0x7dbb08dfa660>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+  permit_unconventional_http_method: False
+  permit_unconventional_http_version: False
+  casefold_http_method: False
+  header_map: drop
+  tolerate_dangerous_framing: False
+[2024-07-14 07:18:59 +0000] [14954] [INFO] Starting gunicorn 22.0.0
+[2024-07-14 07:18:59 +0000] [14954] [DEBUG] Arbiter booted
+[2024-07-14 07:18:59 +0000] [14954] [INFO] Listening at: unix:/home/fastapi/gunicorn.sock (14954)
+[2024-07-14 07:18:59 +0000] [14954] [INFO] Using worker: uvicorn.workers.UvicornWorker
+[2024-07-14 07:18:59 +0000] [14956] [INFO] Booting worker with pid: 14956
+[2024-07-14 07:18:59 +0000] [14957] [INFO] Booting worker with pid: 14957
+[2024-07-14 07:18:59 +0000] [14954] [DEBUG] 2 workers
+[2024-07-14 07:19:07 +0000] [14957] [INFO] Started server process [14957]
+[2024-07-14 07:19:07 +0000] [14957] [INFO] Waiting for application startup.
+[2024-07-14 07:19:07 +0000] [14956] [INFO] Started server process [14956]
+[2024-07-14 07:19:07 +0000] [14956] [INFO] Waiting for application startup.
+[2024-07-14 07:19:07 +0000] [14956] [INFO] Application startup complete.
+[2024-07-14 07:19:07 +0000] [14957] [INFO] Application startup complete.
