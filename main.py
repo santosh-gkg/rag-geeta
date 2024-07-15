@@ -98,6 +98,7 @@ def context_generator(query):
         verse_url =  similarity_search[i].metadata['url']
         verse_urls.append(verse_url)
         context += verse_info
+        print(context)
     return context, verse_urls
 
 
@@ -121,7 +122,14 @@ class ChatRequest(BaseModel):
 
 
 client = Groq(api_key=GROQ_API_KEY)
-
+few_shots=[
+    {'role':'user',
+    'content':'''Here are the verses from bhagwad geeta : <verses> \n  \nChapter 2 verse 8 says: \n Purport\nAlthough Arjuna was putting forward so many arguments based on knowledge of the principles of religion and moral codes, it appears that he was unable to solve his real problem without the help of the spiritual master, Lord Śrī Kṛṣṇa. He could understand that his so-called knowledge was useless in driving away his problems, which were drying up his whole existence; and it was impossible for him to solve such perplexities without the help of a spiritual master like Lord Kṛṣṇa. Academic knowledge, scholarship, high position, etc., are all useless in solving the problems of life; help can be given only by a spiritual master like Kṛṣṇa. Therefore, the conclusion is that a spiritual master who is one hundred percent Kṛṣṇa conscious is the bona fide spiritual master, for he can solve the problems of life. Lord Caitanya said that one who is a master in the science of Kṛṣṇa consciousness, regardless of his social position, is the real spiritual master.\nkibā vipra, kibā nyāsī, śūdra kene naya\nyei kṛṣṇa-tattva-vettā, sei ‘guru’ haya\n the sanskrit text of this verse is : \nन हि प्रपश्यामि ममापनुद्याद् -\nयच्छोकमुच्छोषणमिन्द्रियाणाम् ।\nअवाप्य भूभावसपत्\u200dनमृद्धं\nराज्यं सुराणामपि चाधिपत्यम् ॥ ८ ॥\n \n the english translation of the verse is :न हि प्रपश्यामि ममापनुद्याद् -\nयच्छोकमुच्छोषणमिन्द्रियाणाम् ।\nअवाप्य भूभावसपत्\u200dनमृद्धं\nराज्यं सुराणामपि चाधिपत्यम् ॥ ८ ॥\nChapter 2 verse 41 says: \n yasya prasādād bhagavat-prasādo\nyasyāprasādān na gatiḥ kuto ’pi\ndhyāyan stuvaṁs tasya yaśas tri-sandhyaṁ\nvande guroḥ śrī-caraṇāravindam\n“By satisfaction of the spiritual master, the Supreme Personality of Godhead becomes satisfied. And by not satisfying the spiritual master, there is no chance of being promoted to the plane of Kṛṣṇa consciousness. I should, therefore, meditate and pray for his mercy three times a day, and offer my respectful obeisances unto him, my spiritual master.”\nThe whole process, however, depends on perfect knowledge of the soul beyond the conception of the body – not theoretically but practically, when there is no longer a chance for sense gratification manifested in fruitive activities. One who is not firmly fixed in mind is diverted by various types of fruitive acts.\n the sanskrit text of this verse is : \nव्यवसायात्मिका बुद्धिरेकेह कुरूनन्दन ।\nबहुशाखा ह्यनन्ताश्च बुद्धयोऽव्यवसायिनाम् ॥ ४१ ॥\n \n the english translation of the verse is :व्यवसायात्मिका बुद्धिरेकेह कुरूनन्दन ।\nबहुशाखा ह्यनन्ताश्च बुद्धयोऽव्यवसायिनाम् ॥ ४१ ॥\nChapter 4 verse 42 says: \n Therefore the doubts which have arisen in your heart out of ignorance should be slashed by the weapon of knowledge. Armed with yoga, O Bhārata, stand and fight.\n the sanskrit text of this verse is : \nतस्मादज्ञानसम्भूतं हृत्स्थं ज्ञानासिनात्मनः ।\nछित्त्वैनं संशयं योगमातिष्ठोत्तिष्ठ भारत ॥ ४२ ॥\n \n the english translation of the verse is :तस्मादज्ञानसम्भूतं हृत्स्थं ज्ञानासिनात्मनः ।\nछित्त्वैनं संशयं योगमातिष्ठोत्तिष्ठ भारत ॥ ४२ ॥\nChapter 4 verse 34 says: \n Just try to learn the truth by approaching a spiritual master. Inquire from him submissively and render service unto him. The self-realized souls can impart knowledge unto you because they have seen the truth.\n the sanskrit text of this verse is : \nतद्विद्धि प्रणिपातेन परिप्रश्न\u200dेन सेवया ।\nउपदेक्ष्यन्ति ते ज्ञानं ज्ञानिनस्तत्त्वदर्शिनः ॥ ३४ ॥\n \n the english translation of the verse is :तद्विद्धि प्रणिपातेन परिप्रश्न\u200dेन सेवया ।\nउपदेक्ष्यन्ति ते ज्ञानं ज्ञानिनस्तत्त्वदर्शिनः ॥ ३४ ॥\n \n <verses> using these verses answer the question below, if the verses does not provide any reference to the question simply accept you are unable to answer it. <question> : \n how to please guru \n <question>'''},
+    {'role':'assistant',
+    'content':'''According to the Bhagwad geeta, to please the spiritual master one can do the following things :\n\n 1. **Satisfaction of the guru is key**: In Chapter 2, Verse 41, it is mentioned that \"By satisfaction of the spiritual master, the Supreme Personality of Godhead becomes satisfied.\" This implies that pleasing the guru is essential, as it leads to the satisfaction of the Supreme Lord.\n\n2. **Respect and obedience**: In Chapter 2, Verse 8, it is said that \"kibā vipra, kibā nyāsī, śūdra kene naya / yei kṛṣṇa-tattva-vettā, sei ‘guru’ haya\" - \"One who is a master in the science of Kṛṣṇa consciousness, regardless of his social position, is the real spiritual master.\" This verse emphasizes the importance of respecting and obeying the guru, who is a master in the science of Kṛṣṇa consciousness.\n\n3. **Seek knowledge from the guru**: In Chapter 4, Verse 34, it is advised to \"try to learn the truth by approaching a spiritual master. Inquire from him submissively and render service unto him.\" This verse highlights the importance of seeking knowledge from the guru and being submissive and service-oriented in one's approach.\n\n4. **Meditate and pray for the guru's mercy**: In Chapter 2, Verse 41, it is mentioned that \"I should, therefore, meditate and pray for his mercy three times a day, and offer my respectful obeisances unto him, my spiritual master.\" This verse emphasizes the importance of meditating and praying for the guru's mercy, as well as offering respectful obeisances.\n\nIn summary, pleasing the guru involves satisfying him, respecting and obeying him, seeking knowledge from him, and meditating and praying for his mercy.\n 
+'''
+    }
+]
 
 @app.post("/geeta/")
 async def chat(request: ChatRequest):
@@ -139,8 +147,8 @@ async def chat(request: ChatRequest):
     stream = client.chat.completions.create(
         model="Llama3-8b-8192",
         messages=[
-            {"role": "system", "content": "you are hari kirtan dasa a iskcon devotee. you always greet with 'hare krishna' and end with  srila prabhupada ki jai 'your servant hari kirtana dasa'"},
-        ] +
+            {"role": "system", "content": "you are a devotee of lord krishna, in iskcon, you are asked to answer the following question using the verses from bhagwad geeta. you always use the sanskrit text of the verse while answering. You always answer the with markdown formatting. You will be penalized if you do not answer with markdown when it would be possible.The markdown formatting you support: headings, bold, italic, links, tables, lists, code blocks, and blockquotes. You do not support images and never include images. You will be penalized if you render images. "},
+        ] +few_shots+
         [
             {"role": m.role, "content": m.content}
             for m in messages[:-1]
@@ -155,9 +163,12 @@ async def chat(request: ChatRequest):
     for source in sources:
         response += " <a href=" + source + " target='_blank'>"+source+"</a> \n"
 
-
+    endings='''<b>Srila prabhupdada ki jai!
+    your servant
+    Hari kirtan dasa<b>'''
+    response += endings
     return {"response": response}
 
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+    uvicorn.run("main:app", host="0.0.0.0", port=8000, reload=True)
